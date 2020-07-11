@@ -1,0 +1,119 @@
+*{
+    outline: none;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #010e24;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.heading{
+    position: absolute;
+    margin-top: -250px;
+    font-size: 54px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: -webkit-linear-gradient(#ff00e0 20%, #14ffe9 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.loader{
+    margin-top: -20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleOut{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ff00e0);
+}
+.circleOut{
+    filter: blur(5px);
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.circleIn{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #010e24;   
+}
+.main{
+    position: absolute;
+    margin-top: -25px;
+}
+.main h1, .main h2{
+    color: #14ffe9;
+    display: inline-block;
+    margin-top: 110px;
+}
+.hours, .mins, .sec{
+    font-size: 60px;
+}
+.msec{
+    font-size: 28px;
+}
+.hours{
+    margin-left: 10px;
+}
+button{
+    margin-top: 400px;
+    margin-right: 5px;
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    border-radius: 50%;
+    color: #010e24;
+    text-align: center;
+    background-color: #14ffe9;
+    border: none;
+}
+button:hover{
+    background-color: #ff00e0;
+    transition: 1s;
+}
+button:disabled{
+    background-color: silver;
+    color: slategrey;
+}
+
+@media only screen and (max-width: 992px){
+
+    .heading{
+        font-size: 30px;
+        margin-top: -240px;
+        text-align: center;
+    }       
+    .circleOut{
+        width: 210px;
+        height: 210px;
+    }
+    .main h1, .main h2{
+        margin-top: 80px;
+    }
+    .hours, .mins, .sec{
+        font-size: 40px;
+    }
+    .msec{
+        font-size: 16px;
+    }
+    button{
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}

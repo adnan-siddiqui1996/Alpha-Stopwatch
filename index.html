@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "Timer.png"> 
+</head>
+<body>
+
+    <h1 class="heading">ALPHA STOPWATCH</h1>
+
+    <div class="loader">
+        
+        <div class="circleOut" id="outside">
+            <div class="circleIn">
+            </div> 
+        </div>
+        <div class="main">
+            <h1 class="hours" id="hours"></h1>
+            <h1 class="mins" id="mins"></h1>
+            <h1 class="sec" id="sec">00</h1>
+            <h2 class="msec" id="msec">00</h2>
+        </div>
+    </div>
+
+    <button onclick="play()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button onclick="pause()" id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <button onclick="reset()" id="reset"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+    <button onclick="soundPlay();" id="soundPlay"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button onclick="soundPause();" id="soundPause"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+</body>
+<script src="app.js"></script>
+</html>
