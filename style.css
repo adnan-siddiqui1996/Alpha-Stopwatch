@@ -14,7 +14,7 @@ body{
 }
 .heading{
     position: absolute;
-    margin-top: -250px;
+    margin-top: -275px;
     font-size: 54px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: -webkit-linear-gradient(#ff00e0 20%, #14ffe9 80%);
@@ -22,7 +22,7 @@ body{
     -webkit-text-fill-color: transparent;
 }
 .loader{
-    margin-top: -20px;
+    margin-top: -50px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -34,8 +34,6 @@ body{
     padding: 20px;
     border-radius: 50%;
     background: linear-gradient(#14ffe9, #ff00e0);
-}
-.circleOut{
     filter: blur(5px);
 }
 @keyframes spin{
@@ -50,7 +48,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #010e24;   
+    background-color: #031940;   
 }
 .main{
     position: absolute;
@@ -71,7 +69,8 @@ body{
     margin-left: 10px;
 }
 button{
-    margin-top: 400px;
+    cursor: pointer;
+    margin-top: 350px;
     margin-right: 5px;
     width: 60px;
     height: 60px;
@@ -82,13 +81,48 @@ button{
     background-color: #14ffe9;
     border: none;
 }
+#play{
+    position: absolute;
+    margin-top: 175px;
+    margin-left: -100px;
+}
+#soundPause{
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 95px;
+}
+#timeLapse img{
+    margin-top: 7px;
+    width: 27px;
+    height: 27px;
+}
 button:hover{
     background-color: #ff00e0;
     transition: 1s;
 }
 button:disabled{
     background-color: silver;
-    color: slategrey;
+}
+#record{
+    position: absolute;
+    margin-top: 380px;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to right, #14ffe9, #ff00e0);
+    visibility: hidden;
+}
+#timeRecord{
+    position: absolute;
+    width: 370px;
+    height: 290px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 20px;
+    background: #031940;
+}
+#timeRecord p{
+    color: whitesmoke;
+    font-size: 16pt;
 }
 
 @media only screen and (max-width: 992px){
@@ -115,5 +149,21 @@ button:disabled{
         width: 45px;
         height: 45px;
         font-size: 18px;
+    }
+    #play{
+        margin-left: -77px;
+    }
+    #soundPause{
+        margin-left: 73px;
+    }
+    #record{
+        width: 350px;
+        height: 300px;
+    }
+    #timeRecord{
+        width: 320px;
+        height: 290px;
+        margin-top: 5px;
+        margin-left: 5px;
     }
 }
